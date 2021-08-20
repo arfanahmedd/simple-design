@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+
+    margin: 0;
+    
+}
+p{
+    font-family: 'Pacifico', cursive;
+}
+/* navbar section  */
+.header{
+    width: 100%;
+    min-height: 100vh;
+
+    background: black;
+      color: white;
+    position: relative;
+}
+nav{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+
+    font-family: 'Pacifico', cursive;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-left: 10%;
+    font-size: 25px;
+    z-index: 3;
+}
+.navbar{
+    text-align: right;
+    background: red;
+    padding: 30px 30px;
+    border-bottom-left-radius:25px ;
+}
+.navbar ul li{
+    list-style: none;
+
+    display: inline-block;
+    padding: 0 10px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Antic Slab', serif;
+}
+.row{
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    margin-top: 1%;
+}
+.col-left{
+    width: 20%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.col-Right{
+    flex-basis: 55%;
+    padding: 7%;
+    line-height: 2;
+}
+.col-Right p{
+    color: rgb(177, 173, 173);
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+}
+.col-Right h1{
+    font-size: 40px;
+
+}
+.coll{
+    flex-basis: 30%;
+
+}
+.coll img{
+    cursor: pointer;
+    border-radius: 35px;
+    filter:grayscale(0);
+    transition: filter 1s;
+}
+.coll img:hover{
+    filter: grayscale(1);
+}
+.logoss{
+    position: absolute;
+    display: flex;
+    margin-top: 30px;
+
+}
+.icon{
+ background: rgb(65, 62, 62);
+ padding: 30px;
+ display: flex;
+ justify-content: center;
+ margin: 10px;
+position: relative;
+
+}
+.icon img{
+    width: 40px;
+}
+.icon a{
+    position: absolute;
+    background-color: rgb(253, 0, 0);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 1s;
+}
+.icon a:hover{
+    opacity: 1;
+
+}
+.icon:hover{
+    transform: translateY(-5px);
+}
+@media screen and (max-width: 780px){
+ .logo{
+     font-size: 20px;
+ }
+ nav{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    z-index: 3;
+    align-items: center;
+    
+}
+.row{
+    padding: 0px;
+    display: flex;
+      flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    margin-top: 1%;
+}
+.coll {
+    flex-basis: 87%;
+    margin: auto;
+    margin-top: 20px;
+}
+.col-Right {
+    flex-basis: 86%;
+    padding: 7%;
+    line-height: 2;
+}
+}
